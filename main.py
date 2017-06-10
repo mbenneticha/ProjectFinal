@@ -53,76 +53,76 @@ def getEndPoints():
 	'''displays all resource endpoints'''
 
 	if request.method == 'GET':
-		res,status = { 'url': 'https://cs-496-appspot.com/dream-catcher/v1',
+		res,status = { 'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1',
 			'resources': 
 			{
 			    'accounts': 
 			    {
-			        'url': 'https://cs-496-appspot.com/dream-catcher/v1/accounts',
+			        'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/accounts',
 			        'description':'Get all accounts',
 			        'method' : 'GET'
 			    },
 			    'users1': 
 			    {
-			        'url': 'https://cs-496-appspot.com/dream-catcher/v1/users',
+			        'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/users',
 			        'description':'Get all users',
 			        'method' : 'GET'
 			    },
 			    'users2':
 			    {
-			    	'url': 'https://cs-496-appspot.com/dream-catcher/v1/accounts/<account id>/users',
+			    	'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/accounts/<account id>/users',
 			        'description':'Get all users by account key',
 			        'method' : 'GET'
 			    },
 			    'users3':
 			    {
-			    	'url': 'https://cs-496-appspot.com/dream-catcher/v1/accounts/users/queries/1',
+			    	'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/accounts/users/queries/1',
 			        'description':'Adds a user',
 			        'method' : 'POST',
 			        'requires':'Account and user ids in request body'
 			    },
 			    'users4':
 			    {
-			    	'url': 'https://cs-496-appspot.com/dream-catcher/v1/accounts/users/queries/2',
+			    	'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/accounts/users/queries/2',
 			        'description':'Updates a user',
 			        'method' : 'PUT',
 			        'requires':'Account and user ids in request body'
 			    },
 			    'users5':
 			    {
-			    	'url': 'https://cs-496-appspot.com/dream-catcher/v1/accounts/<account id>/users/<user id>',
+			    	'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/accounts/<account id>/users/<user id>',
 			        'description':'Deletes a user',
 			        'method' : 'DELETE'
 			    },
 			    'dreams1': 
 			    {
-			        'url': 'https://cs-496-appspot.com/dream-catcher/v1/dreams',
+			        'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/dreams',
 			        'description':'Get all dreams',
 			        'method': 'GET'
 			    },
 			    'dreams2': 
 			    {
-			        'url': 'https://cs-496-appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/<account id>/users/<user id>/dreams',
+			        'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/<account id>/users/<user id>/dreams',
 			        'description':'Get all dreams had by a specific user',
 			        'method':'GET'
 			    },
 			    'dreams3': 
 			    {
-			        'url': 'https://cs-496-appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/users/dreams/queries/1',
+			        'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/users/dreams/queries/1',
 			        'description':'Adds a user dream',
 			        'method':'POST',
 			        'requires':'Account and user ids in request body'
 			    },
 			    'dreams4': 
 			    {
-			        'url': 'https://cs-496-appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/users/dreams/queries/2',
+			        'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/users/dreams/queries/2',
 			        'description':'Updates a user dream',
 			        'method':'PUT',
 			        'requires':'Account and user ids in request body'
 			    },
 			    'dreams5': 
 			    {
-			        'url': 'https://cs-496-appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/<account id>/users/<user id>/dreams/<dream id>',
+			        'url': 'http://python-gae-quickstart-164103.appspot.com/dream-catcher/v1/dream-catcher/v1/accounts/<account id>/users/<user id>/dreams/<dream id>',
 			        'description':'Deletes a user dream',
 			        'method':'DELETE'
 			    },
